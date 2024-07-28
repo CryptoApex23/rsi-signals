@@ -68,10 +68,10 @@ Discord: https://discord.gg/P265G7Ex
 4. Create a `.env` file in the root of your project directory and add your bot token, Bybit API keys, and thread ID:
 
    ```plaintext
-   BOT_TOKEN=your_telegram_bot_token_here
-   BYBIT_API_KEY=your_bybit_api_key_here
-   BYBIT_API_SECRET=your_bybit_api_secret_here
-   THREAD_ID=your_thread_id_here
+    BOT_TOKEN="YOUR BOT TOKEN"
+    CHANNEL_ID="YOUR CHANNEL ID"
+    BYBIT_API_KEY="your api key"
+    BYBIT_API_SECRET="your api secret"
    ```
 
 ## Usage
