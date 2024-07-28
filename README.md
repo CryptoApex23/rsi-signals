@@ -78,10 +78,9 @@ Discord: https://discord.gg/P265G7Ex
 
 To get an api key go to ByBit: (this is an affiliate link, it will help me and cost you nothing XD)
 
-    ```bash
+    
     https://www.bybit.com/invite?ref=QXQVLK
-    ```
-
+   
 1. Replace `your_telegram_bot_token_here`, `your_bybit_api_key_here`, `your_bybit_api_secret_here` with your actual credentials in the `.env` file.
 2. Run the script:
 
