@@ -33,7 +33,7 @@ Discord: https://discord.gg/P265G7Ex
 - Monitors the RSI every 15 minutes.
 - Sends an alert message to a specified Telegram thread if any coin's RSI is below 30.
 
-## Requirements
+## Requirementss
 
 - Python 3.6+
 - `python-telegram-bot` library
