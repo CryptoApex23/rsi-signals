@@ -11,7 +11,6 @@ BYBIT_API_SECRET = os.getenv("BYBIT_API_SECRET")
 BYBIT_URL = "https://api.bybit.com/v5/"
 
 
-
 def get_bybit_klines(symbol, interval, limit=200):
     url = f'{BYBIT_URL}market/kline?category=spot&symbol={symbol}&interval={interval}&limit={limit}'
     response = requests.get(url)
