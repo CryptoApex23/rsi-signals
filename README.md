@@ -68,10 +68,10 @@ Discord: https://discord.gg/P265G7Ex
 4. Create a `.env` file in the root of your project directory and add your bot token, Bybit API keys, and thread ID:
 
    ```plaintext
-   BOT_TOKEN=your_telegram_bot_token_here
-   BYBIT_API_KEY=your_bybit_api_key_here
-   BYBIT_API_SECRET=your_bybit_api_secret_here
-   THREAD_ID=your_thread_id_here
+    BOT_TOKEN="YOUR BOT TOKEN"
+    CHANNEL_ID="YOUR CHANNEL ID"
+    BYBIT_API_KEY="your api key"
+    BYBIT_API_SECRET="your api secret"
    ```
 
 5. Create a `settings.json` file in the root of your project directory to configure the interval, coins to scan, and RSI threshold:
@@ -89,11 +89,10 @@ Discord: https://discord.gg/P265G7Ex
 
 To get an api key go to ByBit: (this is an affiliate link, it will help me and cost you nothing XD)
 
-    ```bash
+    
     https://www.bybit.com/invite?ref=QXQVLK
-    ```
-
-1. Replace `your_telegram_bot_token_here`, `your_bybit_api_key_here`, `your_bybit_api_secret_here` with your actual credentials in the `.env` file.
+   
+1. Replace `YOUR BOT TOKEN`, `YOUR CHANNEL ID`, `BYBIT_API_KEY` and `BYBIT_API_SECRET` with your actual credentials in the `.env` file.
 2. Run the script:
 
    ```bash
