@@ -74,6 +74,17 @@ Discord: https://discord.gg/P265G7Ex
    THREAD_ID=your_thread_id_here
    ```
 
+5. Create a `settings.json` file in the root of your project directory to configure the interval, coins to scan, and RSI threshold:
+
+   ```json
+   {
+     "interval_minutes": 15,
+     "coins": ["TONUSDT", "BTCUSDT", "ETHUSDT"],
+     "rsi_threshold": 30,
+     "check_interval": 15
+   }
+   ```
+
 ## Usage
 
 To get an api key go to ByBit: (this is an affiliate link, it will help me and cost you nothing XD)
@@ -97,6 +108,7 @@ To get an api key go to ByBit: (this is an affiliate link, it will help me and c
 - `bot_sender.py`: Contains the function to send messages to a specific Telegram thread.
 - `rsi_calculator.py`: Contains the logic to fetch RSI values for specified coins using the Bybit API.
 - `.env`: File to store environment variables (not included in the repository).
+- `settings.json`: Configuration file for setting the interval, coins to scan, and RSI threshold.
 
 ## License
 

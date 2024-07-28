@@ -3,13 +3,19 @@ import requests
 import pandas as pd
 import ta
 from dotenv import load_dotenv
-from bot_sender import send_message
+import json
+
 # Load environment variables from .env file
 load_dotenv()
 BYBIT_API_KEY = os.getenv("BYBIT_API_KEY")
 BYBIT_API_SECRET = os.getenv("BYBIT_API_SECRET")
 BYBIT_URL = "https://api.bybit.com/v5/"
 
+# Load settings from settings.json
+with open('settings.json') as f:
+    settings = json.load(f)
+    
+INTERVAL_MINUTES = settings['interval_minutes']
 
 def get_bybit_klines(symbol, interval, limit=200):
     url = f'{BYBIT_URL}market/kline?category=spot&symbol={symbol}&interval={interval}&limit={limit}'
@@ -27,8 +33,7 @@ def get_bybit_klines(symbol, interval, limit=200):
     return df
 
 def calculate_rsi(symbol):
-    """Calculate the 15-minute RSI for a given symbol."""
-    df = get_bybit_klines(symbol, '5')
+    df = get_bybit_klines(symbol, INTERVAL_MINUTES)
     rsi = ta.momentum.RSIIndicator(df['close'], window=14)
     return rsi.rsi().iloc[-1]
 
